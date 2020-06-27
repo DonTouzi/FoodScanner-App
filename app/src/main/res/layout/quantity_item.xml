@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="com.univ_amu.food_scanner.ui.ConverterUtil"/>
+        <variable
+            name="viewHolder"
+            type="com.univ_amu.food_scanner.ui.QuantityListAdapter.ViewHolder" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:quantityLevel="@{viewHolder.quantity.level}"
+            android:text="@{viewHolder.quantity.name}"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            tools:text="Sugar" />
+
+        <TextView
+            android:id="@+id/brands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/unit"
+            app:quantityValue="@{viewHolder.quantity.value}"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@{viewHolder.quantity.unit}"
+            android:textSize="14sp"
+            tools:text="kg" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

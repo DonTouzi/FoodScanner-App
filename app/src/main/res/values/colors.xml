@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+<color name="colorPrimary">#008577</color>
+<color name="colorPrimaryDark">#00574B</color>
+<color name="colorAccent">#D81B60</color>
+<color name="nutriscore_A">#027117</color>
+<color name="nutriscore_B">#8FBB1D</color>
+<color name="nutriscore_C">#F7D800</color>
+<color name="nutriscore_D">#EA8D00</color>
+<color name="nutriscore_E">#D61D00</color>
+<color name="unknown_nutriscore">#8F8F8F</color>
+</resources>

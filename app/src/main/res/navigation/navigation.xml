@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/navigation"
+app:startDestination="@id/FoodListFragment">
+    <fragment
+        android:id="@+id/FoodListFragment"
+        android:name="com.univ_amu.food_scanner.ui.FoodListFragment"
+        android:label="@string/food_scanner">
+        <action android:id="@+id/action_FoodListFragment_to_FoodFragment"
+                app:destination="@id/FoodFragment" />
+        <action android:id="@+id/action_FoodListFragment_to_ScannerFragment"
+            app:destination="@id/ScannerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FoodFragment"
+        android:name="com.univ_amu.food_scanner.ui.FoodFragment"
+        android:label="@string/food_scanner">
+        <argument android:name="code" app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/ScannerFragment"
+        android:name="com.univ_amu.food_scanner.ui.ScannerFragment"
+        android:label="@string/food_scanner">
+        <action android:id="@+id/action_ScannerFragment_to_FoodFragment"
+                app:destination="@id/FoodFragment"
+                app:popUpTo="@+id/FoodListFragment"/>
+    </fragment>
+</navigation>

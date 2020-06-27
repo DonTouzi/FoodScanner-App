@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FoodScanner</string>
+    <string name="food_scanner">Food Scanner</string>
+    <string name="today">aujourd\'hui</string>
+    <string name="composition">Composition</string>
+    <string name="_100g_ml">100 g/ml</string>
+    <string name="unknown_barcode">Code-barres inconnu</string>
+    <plurals name="days_ago">
+        <item quantity="one">il y a un jour</item>
+        <item quantity="other">il y a %d jours</item>
+    </plurals>
+    <plurals name="months_ago">
+        <item quantity="one">il y a un mois</item>
+        <item quantity="other">il y a %d mois</item>
+    </plurals>
+    <plurals name="years_ago">
+        <item quantity="one">il y a un an</item>
+        <item quantity="other">il y a %d ans</item>
+    </plurals>
+</resources>

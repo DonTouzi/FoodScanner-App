@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewHolder"
+            type="com.univ_amu.food_scanner.ui.FoodListAdapter.ViewHolder" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:padding="16dp"
+        android:onClick="@{viewHolder::onClick}">
+        <include layout="@layout/food_description"
+            bind:food="@{viewHolder.food}" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
